@@ -2,8 +2,8 @@ spring:
   data:
     cassandra:
        keyspace-name: main
-       username: NktuMnJhoYeZXQhRYFtZbZKa
-       password: Roz4pKRQRHvEjragsa+.gbjhewmclDWK83cC9ZK0JAQ2,-CquN3k8aX-+,m8iTLcTwMgfLzYLJ-hZdWN2QRQ144yxKW_vmzJHT7ptPMjyh9NinTD4Qly-fq0edzo6bqK
+       username: <username>
+       password: <password>
        schema-action: create-if-not-exists
        requests:
         timeout: 30s
@@ -13,9 +13,13 @@ spring:
 
 datastax.astra:
   secure-connect-bundle: secure-connect.zip
+datastax-java-driver:
+  basic:
+    request:
+      timeout: 15s
 
 astra.db:
-  id: a3a403bd-a99b-4437-b374-912e10710b1d
+  id: <db-id>
   region: us-west1
   keyspace: main
-  application.token: AstraCS:NktuMnJhoYeZXQhRYFtZbZKa:7cb57ba25ac2d677bb444842b19d13e47311901d3f2176a20941e0695f5e9fb5
+  application.token: <token>
