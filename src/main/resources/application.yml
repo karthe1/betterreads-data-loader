@@ -16,10 +16,14 @@ datastax.astra:
 datastax-java-driver:
   basic:
     request:
-      timeout: 15s
+      timeout: 20s
 
 astra.db:
   id: <db-id>
   region: us-west1
   keyspace: main
   application.token: <token>
+
+datadump.location:
+    author: test-authors.txt
+    works: test-works.txt
